@@ -4,15 +4,13 @@ layout: default
 
 <div class="container d-flex flex-column">
     <div class="
-        container d-flex flex-body
+        container d-flex flex-column flex-body mx-auto py-5
         {% if page.center %}
-            flex-column justify-content-center align-items-center mx-auto py-5 text-center
-        {% else %}
-            mx-auto my-5
+            justify-content-center text-center align-items-center
         {% endif %}
     ">
 
-        <header>
+        <header class="my-3">
             {% unless page.hide_title %}
             {% if page.title %}
             <h1 class="my-3">{{ page.title }}</h1>
@@ -20,7 +18,7 @@ layout: default
             {% endunless %}
         </header>
 
-        <main>
+        <main class="my-3">
             {{ content }}
         </main>
 
