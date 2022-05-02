@@ -1,0 +1,24 @@
+---
+layout:
+---
+{
+    "name": "{{ site.title }}",
+    "short_name": "{{ site.title }}",
+    "start_url": "{{ site.url | append: site.baseurl }}/",
+    "display": "standalone",
+    "theme_color": "#0d6efd",
+    "background_color": "#ffffff",
+    "description": "{{ site.description }}",
+    "icons": [
+        {
+            "src": "{{ site.url | append: site.baseurl }}/assets/images/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "{{ site.url | append: site.baseurl }}/assets/images/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
