@@ -3,8 +3,24 @@ layout: default
 ---
 
 <div class="container d-flex flex-column">
+
+    <div class="container d-flex flex-header">
+        <nav class="navbar navbar-expand">
+            <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="{{ site.url | append: site.baseurl }}/">Home</a>
+                </li>
+                {% for item in site.navigation_items %}
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="{{ site.url | append: site.baseurl }}{{ item.path }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+
     <div class="
-        container d-flex flex-column flex-body py-5
+        container container-body d-flex flex-column flex-body py-5
         {% if page.center %}
             justify-content-center text-center
         {% endif %}
@@ -49,4 +65,5 @@ layout: default
         <hr>
         {% include footer.html %}
     </div>
+
 </div>

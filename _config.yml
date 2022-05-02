@@ -17,6 +17,14 @@ date_format: "%e %B %Y"
 
 seo: true
 
+navigation_items:
+  - name: Blog
+    path: /blog/
+  - name: Projects
+    path: /projects/
+  - name: About
+    path: /about/
+
 defaults:
   - scope:
       path: ""
