@@ -4,9 +4,9 @@ layout: default
 
 <div class="container d-flex flex-column">
     <div class="
-        container d-flex flex-column flex-body mx-auto py-5
+        container d-flex flex-column flex-body py-5
         {% if page.center %}
-            justify-content-center text-center align-items-center
+            justify-content-center text-center
         {% endif %}
     ">
 
@@ -15,13 +15,24 @@ layout: default
             {% if page.title %}
             <h1 class="my-3">{{ page.title }}</h1>
             {% endif %}
-            {% unless page.hide_date %}
-            {% if page.date %}
-            <time class="text-muted" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S.%3N" }}">
-                {{ page.date | date: site.date_format | default: "%a, %e %b %Y %H:%M:%S %Z" }}
-            </time>
+            {% endunless %}
+
+            {% unless page.hide_author %}
+            {% if page.author %}
+            <p class="text-muted my-1">
+                {{ page.author }}
+            </p>
             {% endif %}
             {% endunless %}
+
+            {% unless page.hide_date %}
+            {% if page.date %}
+            <p class="text-muted my-1">
+                <time datetime="{{ page.date | date: " %Y-%m-%dT%H:%M:%S.%3N" }}">
+                    {{ page.date | date: site.date_format | default: "%a, %e %b %Y %H:%M:%S %Z" }}
+                </time>
+            </p>
+            {% endif %}
             {% endunless %}
         </header>
 
