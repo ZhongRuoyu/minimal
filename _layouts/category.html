@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="my-5">
+    {% for post in site.posts %}
+    {% if post.categories contains page.category %}
+    <div class="my-4">
+        <a href="{{ site.url | append: site.baseurl }}{{ post.url }}" class="text-reset text-decoration-none">
+            <div class="fs-3">{{ post.title }}</div>
+            {% if post.date %}
+            <p class="text-muted">
+                <time datetime="{{ post.date | date: " %Y-%m-%dT%H:%M:%S.%3N" }}">
+                    {{ post.date | date: site.date_format | default: "%a, %e %b %Y %H:%M:%S %Z" }}
+                </time>
+            </p>
+            {% endif %}
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

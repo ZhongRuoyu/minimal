@@ -25,6 +25,9 @@ navigation_items:
   - name: About
     path: /about/
 
+future: true
+permalink: /:categories/:title/
+
 defaults:
   - scope:
       path: ""
