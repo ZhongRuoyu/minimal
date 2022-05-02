@@ -2,7 +2,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: site.title }}</title>
+    <title>
+        {{ page.title | default: site.title }}
+        {% unless page.hide_site_title %}
+        - {{ site.title }}
+        {% endunless %}
+    </title>
 
     <link rel="stylesheet" href="{{ site.url | append: site.baseurl }}/assets/css/style.css">
 

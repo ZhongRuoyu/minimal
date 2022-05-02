@@ -1,13 +1,13 @@
-title: Title
-baseurl: ""
-url: https://www.example.com
+title: Minimal
+baseurl: /minimal
+url: https://zhongruoyu.github.io
 
 lang: en
 locale: en_US
 
-tagline: Title | Hello, world
+tagline: Minimal | A minimalist Jekyll blog template.
 description: >-
-  Hello, world
+  A minimalist Jekyll blog template.
 # logo: /assets/images/logo.png
 author: Zhong Ruoyu
 copyright:
