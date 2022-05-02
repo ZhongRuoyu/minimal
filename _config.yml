@@ -2,9 +2,6 @@ title: Minimal
 baseurl: /minimal
 url: https://zhongruoyu.github.io
 
-lang: en
-locale: en_US
-
 tagline: Minimal | A minimalist Jekyll blog template.
 description: >-
   A minimalist Jekyll blog template.
@@ -13,6 +10,10 @@ author: Zhong Ruoyu
 copyright:
   years: 2022
   owner: Zhong Ruoyu
+
+lang: en
+locale: en_GB
+date_format: "%e %B %Y, %H:%M"
 
 seo: true
 
