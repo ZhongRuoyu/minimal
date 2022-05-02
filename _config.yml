@@ -1,0 +1,31 @@
+title: Title
+baseurl: ""
+url: https://www.example.com
+
+lang: en
+locale: en_US
+
+tagline: Title | Hello, world
+description: >-
+  Hello, world
+# logo: /assets/images/logo.png
+author: Zhong Ruoyu
+copyright:
+  years: 2022
+  owner: Zhong Ruoyu
+
+seo: true
+sitemap: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+sass:
+  sourcemap: development
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

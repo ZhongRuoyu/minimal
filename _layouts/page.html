@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="container d-flex flex-column">
+    <div class="
+        container d-flex flex-body
+        {% if page.center %}
+            flex-column justify-content-center align-items-center mx-auto py-5
+        {% else %}
+            mx-auto my-5
+        {% endif %}
+    ">
+
+        <header>
+            {% unless page.hide_title %}
+            {% if page.title %}
+            <h1 class="my-3">{{ page.title }}</h1>
+            {% endif %}
+            {% endunless %}
+        </header>
+
+        <main>
+            {{ content }}
+        </main>
+
+    </div>
+
+    <div class="container flex-footer text-center text-muted fw-light">
+        <hr>
+        {% include footer.html %}
+    </div>
+</div>
