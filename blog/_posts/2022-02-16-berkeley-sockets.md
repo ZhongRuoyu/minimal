@@ -2,6 +2,7 @@
 title: Berkeley Sockets
 date: 2022-02-16
 author: Wikipedia
+category: blog
 ---
 
 (Extracted from [Berkeley sockets - Wikipedia](https://en.wikipedia.org/wiki/Berkeley_sockets). Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).)
