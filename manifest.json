@@ -6,7 +6,7 @@ layout:
     "short_name": "{{ site.title }}",
     "start_url": "{{ site.url | append: site.baseurl }}/",
     "display": "standalone",
-    "theme_color": "#0d6efd",
+    "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "description": "{{ site.description }}",
     "icons": [
