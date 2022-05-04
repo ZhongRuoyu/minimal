@@ -8,7 +8,7 @@ layout: page
     {% for post in site.posts %}
     {% if post.categories contains page.category %}
     {% unless post.categories contains "archive" and page.category != "archive" %}
-    <div class="my-4">
+    <article class="my-4">
         <a href="{{ site.url | append: site.baseurl }}{{ post.url }}" class="text-reset text-decoration-none">
             <div class="fs-3">{{ post.title }}</div>
             {% if post.date %}
@@ -19,7 +19,7 @@ layout: page
             </p>
             {% endif %}
         </a>
-    </div>
+    </article>
     {% endunless %}
     {% endif %}
     {% endfor %}
