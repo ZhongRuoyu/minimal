@@ -16,6 +16,7 @@ locale: en_GB
 date_format: "%e %B %Y"
 
 seo: true
+# google_analytics: G-##########
 
 navigation_items:
   - name: Blog
