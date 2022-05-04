@@ -6,11 +6,11 @@
         {% for item in site.navigation_items %}
         <li class="nav-item me-2">
             {% if item.absolute_path %}
-            <a class="nav-link px-2 py-0" href="{{ item.path }}">
+            <a class="nav-link text-nowrap px-2 py-0" href="{{ item.path }}">
                 {{ item.name }}
             </a>
             {% else %}
-            <a class="nav-link px-2 py-0" href="{{ site.url | append: site.baseurl }}{{ item.path }}">
+            <a class="nav-link text-nowrap px-2 py-0" href="{{ site.url | append: site.baseurl }}{{ item.path }}">
                 {{ item.name }}
             </a>
             {% endif %}
