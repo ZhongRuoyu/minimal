@@ -1,7 +1,13 @@
 "use strict";
 
 (function () {
-    for (const figure of document.getElementsByTagName("figure")) {
+    const mains = document.getElementsByTagName("main");
+    if (mains.length !== 1) {
+        return;
+    }
+    const main = mains.item(0);
+
+    for (const figure of main.getElementsByTagName("figure")) {
         if (figure.classList.length === 0) {
             figure.classList.add("figure");
             for (const img of figure.getElementsByTagName("img")) {
@@ -13,7 +19,7 @@
         }
     }
 
-    for (const table of document.getElementsByTagName("table")) {
+    for (const table of main.getElementsByTagName("table")) {
         if (table.classList.length === 0) {
             table.classList.add("table");
         }
