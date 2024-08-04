@@ -9,7 +9,9 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
+gem "html-proofer"
 gem "jekyll"
+gem "webrick"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -17,9 +19,9 @@ gem "jekyll"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-    gem "jekyll-redirect-from"
-    gem "jekyll-seo-tag"
-    gem "jekyll-sitemap"
+  gem "jekyll-redirect-from"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -35,7 +37,3 @@ gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", :platforms => [:jruby]
-
-# https://github.com/github/pages-gem/issues/752
-gem "webrick"
-
