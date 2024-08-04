@@ -1,7 +1,7 @@
 ---
 title: Lorem Ipsum
 date: 2022-01-01
-author: Zhong Ruoyu
+author: Ruoyu Zhong
 category: blog
 ---
 

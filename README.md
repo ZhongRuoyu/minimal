@@ -1,6 +1,9 @@
 # Minimal
 
-Minimal is a simple, extensible [Bootstrap](https://getbootstrap.com/)-based minimalist [Jekyll](https://jekyllrb.com/) blog theme, developed by [Zhong Ruoyu](https://www.ruoyu.xyz). It is a refactorization of Ruoyu's previous site, developed in 2020.
+Minimal is a simple, extensible [Bootstrap](https://getbootstrap.com/)-based
+minimalist [Jekyll](https://jekyllrb.com/) blog theme, developed by
+[Ruoyu Zhong](https://www.ruoyu.xyz). It is a refactorization of Ruoyu's
+previous site, developed in 2020.
 
 ## Live Demo
 

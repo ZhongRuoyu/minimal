@@ -6,10 +6,10 @@ tagline: Minimal | A minimalist Jekyll blog theme.
 description: >-
   A minimalist Jekyll blog theme.
 # logo: /assets/images/logo.png
-author: Zhong Ruoyu
+author: Ruoyu Zhong
 copyright:
-  years: 2022
-  owner: Zhong Ruoyu
+  years: 2022 - 2024
+  owner: Ruoyu Zhong
 
 lang: en
 locale: en_GB
