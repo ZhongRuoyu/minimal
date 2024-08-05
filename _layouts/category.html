@@ -18,12 +18,12 @@ layout: page
         </time>
       </div>
       {%- endif %}
-      {% if post.description -%}
-      <p>
-        {{ post.description }}
-      </p>
-      {%- endif %}
     </a>
+    {% if post.description -%}
+    <p>
+      {{ post.description }}
+    </p>
+    {%- endif %}
   </article>
   {%- endunless %}
   {%- endif %}
