@@ -35,6 +35,8 @@ defaults:
       path: ""
     values:
       layout: page
+      anchor: true
+      mathjax: false
 
 sass:
   sourcemap: development
