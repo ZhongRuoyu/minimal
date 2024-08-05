@@ -1,49 +1,42 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {{ page.title | default: site.title }}
-        {% unless page.hide_site_title %}
-        - {{ site.title }}
-        {% endunless %}
-    </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {{- page.title | default: site.title -}}
+    {%- unless page.hide_site_title -%}
+    {{- " - " -}}
+    {{- site.title -}}
+    {%- endunless -%}
+  </title>
 
-    <!-- Colour mode toggler -->
-    <script data-cfasync="false" src="{{ site.url | append: site.baseurl }}/assets/js/color-modes.js"></script>
+  <script data-cfasync="false" src="{{ site.url | append: site.baseurl }}/assets/js/color-modes.js"></script>
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="{{ site.url | append: site.baseurl }}/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="{{ site.url | append: site.baseurl }}/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="{{ site.url | append: site.baseurl }}/assets/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="{{ site.url | append: site.baseurl }}/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="{{ site.url | append: site.baseurl }}/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="{{ site.url | append: site.baseurl }}/assets/images/favicon/favicon-16x16.png">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ site.url | append: site.baseurl }}/assets/css/style.css">
+  <link rel="manifest" href="{{ site.url | append: site.baseurl }}/manifest.json">
 
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="{{ site.url | append: site.baseurl }}/manifest.json">
+  <link rel="stylesheet" href="{{ site.url | append: site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {% if site.google_analytics -%}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "{{ site.google_analytics }}");
+  </script>
+  {%- endif %}
 
-    {% if site.google_analytics %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag("js", new Date());
-        gtag("config", "{{ site.google_analytics }}");
-    </script>
-    {% endif %}
-
-    {% if site.seo %}
-    <!-- SEO -->
-    {% seo title=false %}
-    {% endif %}
+  {% if site.seo -%}
+  {%- seo title=false -%}
+  {%- endif %}
 </head>

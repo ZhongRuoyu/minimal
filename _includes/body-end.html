@@ -1,24 +1,15 @@
-<!-- Bootstrap default classes -->
 <script src="{{ site.url | append: site.baseurl }}/assets/js/minimal-bootstrap.js"></script>
-
-<!-- Bootstrap Bundle -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
-    integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-{% if page.anchor %}
-<!-- AnchorJS -->
+  integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% if page.anchor -%}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js"
-    integrity="sha512-zPB79j2C+3sFS9zcA3vg/z6bVKzJVEyu9pY5w89akQRys76zpAT2t6S3wZKla3QQ14O5l/Yt0RUQ/DHXx82Y5g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    anchors.add().remove(".no-anchor");
-</script>
-{% endif %}
-
-{% if page.mathjax %}
-<!-- MathJax -->
+  integrity="sha512-zPB79j2C+3sFS9zcA3vg/z6bVKzJVEyu9pY5w89akQRys76zpAT2t6S3wZKla3QQ14O5l/Yt0RUQ/DHXx82Y5g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>anchors.add().remove(".no-anchor");</script>
+{%- endif %}
+{% if page.mathjax -%}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
-    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-{% endif %}
+  integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{%- endif %}

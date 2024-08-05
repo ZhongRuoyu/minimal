@@ -5,27 +5,27 @@ layout: page
 {{ content }}
 
 <div class="my-5">
-    {% for post in site.posts %}
-    {% if post.categories contains page.category %}
-    {% unless post.categories contains "archive" and page.category != "archive" %}
-    <article class="my-5">
-        <a href="{{ site.url | append: site.baseurl }}{{ post.url }}" class="text-reset text-decoration-none">
-            <h2 class="fs-2 no-anchor">{{ post.title }}</h2>
-            {% if post.date %}
-            <p class="text-muted">
-                <time datetime="{{ post.date | date: " %Y-%m-%dT%H:%M:%S.%3N" }}">
-                    {{ post.date | date: site.date_format | default: "%a, %e %b %Y %H:%M:%S %Z" }}
-                </time>
-            </p>
-            {% endif %}
-            {% if post.description %}
-            <p>
-                {{ post.description }}
-            </p>
-            {% endif %}
-        </a>
-    </article>
-    {% endunless %}
-    {% endif %}
-    {% endfor %}
+  {% for post in site.posts -%}
+  {% if post.categories contains page.category -%}
+  {% unless post.categories contains "archive" and page.category != "archive" -%}
+  <article class="my-5">
+    <a href="{{ site.url | append: site.baseurl }}{{- post.url -}}" class="text-reset text-decoration-none">
+      <h2 class="fs-2 no-anchor">{{ post.title }}</h2>
+      {% if post.date -%}
+      <p class="text-muted">
+        <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S.%3N" }}">
+          {{- post.date | date: site.date_format | default: "%a, %e %b %Y %H:%M:%S %Z" -}}
+        </time>
+      </p>
+      {%- endif %}
+      {% if post.description -%}
+      <p>
+        {{ post.description }}
+      </p>
+      {%- endif %}
+    </a>
+  </article>
+  {%- endunless %}
+  {%- endif %}
+  {% endfor %}
 </div>

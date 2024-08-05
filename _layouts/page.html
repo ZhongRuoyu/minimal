@@ -3,33 +3,24 @@ layout: default
 ---
 
 <div class="container d-flex flex-column">
-
-    <div class="container d-flex flex-header">
-        {% include navigation.html %}
-    </div>
-
-    <div class="
-        container container-body d-flex flex-column flex-body py-5
-        {% if page.center %}
-            justify-content-center text-center
-        {% endif %}
-    ">
-
-        <article>
-
-            {% include header.html %}
-
-            <main class="my-3">
-                {{ content }}
-            </main>
-
-        </article>
-
-    </div>
-
-    <div class="container flex-footer text-center text-muted fw-light">
-        <hr>
-        {% include footer.html %}
-    </div>
-
+  <div class="container d-flex flex-header">
+    {% include navigation.html %}
+  </div>
+  <div class="container container-body d-flex flex-column flex-body py-5
+    {%- if page.center -%}
+    {{- " " -}}
+    justify-content-center text-center
+    {%- endif -%}
+  ">
+    <article>
+      {% include header.html %}
+      <main class="my-3">
+        {{ content }}
+      </main>
+    </article>
+  </div>
+  <div class="container flex-footer text-center text-muted fw-light">
+    <hr>
+    {% include footer.html %}
+  </div>
 </div>

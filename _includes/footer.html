@@ -1,17 +1,18 @@
 <footer>
-    <p>
-        <span class="text-nowrap">
-            Copyright &copy;
-            {% if site.copyright.years %}
-            {{ site.copyright.years }}
-            {% endif %}
-            {{ site.copyright.owner }}.
-        </span>
-
-        <span class="text-nowrap">
-            {% if site.copyright.message %}
-            {{ site.copyright.message }}
-            {% endif %}
-        </span>
-    </p>
+  <p>
+    <span class="text-nowrap">
+      {{- "Copyright &copy; " -}}
+      {%- if site.copyright.years -%}
+      {{- site.copyright.years -}}
+      {%- endif -%}
+      {{- " " -}}
+      {{- site.copyright.owner | default: site.title -}}
+      {{- "." -}}
+    </span>
+    {% if site.copyright.message -%}
+    <span class="text-nowrap">
+      {{- site.copyright.message -}}
+    </span>
+    {%- endif %}
+  </p>
 </footer>
