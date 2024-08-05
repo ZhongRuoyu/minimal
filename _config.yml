@@ -5,7 +5,6 @@ url: https://minimal.ruoyu.io
 tagline: Minimal | A minimalist Jekyll blog theme.
 description: >-
   A minimalist Jekyll blog theme.
-# logo: /assets/images/logo.png
 author: Ruoyu Zhong
 copyright:
   years: 2022 - 2024
@@ -14,6 +13,21 @@ copyright:
 lang: en
 locale: en_GB
 date_format: "%e %B %Y"
+
+# logo: /assets/images/logo.png
+# favicon:
+#   - rel: apple-touch-icon
+#     sizes: 180x180
+#     href: /assets/images/favicon/apple-touch-icon.png
+#   - rel: icon
+#     type: image/png
+#     sizes: 32x32
+#     href: /assets/images/favicon/favicon-32x32.png
+#   - rel: icon
+#     type: image/png
+#     sizes: 16x16
+#     href: /assets/images/favicon/favicon-16x16.png
+# manifest: /manifest.json
 
 seo: true
 # google_site_verification: your verification string
@@ -47,7 +61,6 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - LICENSE
   - README.md
+  - minimal.gemspec

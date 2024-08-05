@@ -12,19 +12,29 @@
 
   <script data-cfasync="false" src="{{ site.url | append: site.baseurl }}/assets/js/color-modes.js"></script>
 
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="{{ site.url | append: site.baseurl }}/assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="{{ site.url | append: site.baseurl }}/assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16"
-    href="{{ site.url | append: site.baseurl }}/assets/images/favicon/favicon-16x16.png">
-
+  {% for favicon in site.favicon %}
+  <link rel="{{ favicon.rel | default: "icon" }}"
+    {% if favicon.type -%}
+    type="{{ favicon.type }}"
+    {%- endif %}
+    {% if favicon.sizes -%}
+    sizes="{{ favicon.sizes }}"
+    {%- endif %}
+    href="{{ site.url | append: site.baseurl }}{{ favicon.href }}"
+  >
+  {%- endfor %}
+  {% if site.manifest -%}
   <link rel="manifest" href="{{ site.url | append: site.baseurl }}/manifest.json">
+  {%- endif %}
 
   <link rel="stylesheet" href="{{ site.url | append: site.baseurl }}/assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
     integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  {% if site.seo -%}
+  {%- seo title=false -%}
+  {%- endif %}
 
   {% if site.google_analytics -%}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -34,9 +44,5 @@
     gtag("js", new Date());
     gtag("config", "{{ site.google_analytics }}");
   </script>
-  {%- endif %}
-
-  {% if site.seo -%}
-  {%- seo title=false -%}
   {%- endif %}
 </head>
