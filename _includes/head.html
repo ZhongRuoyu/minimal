@@ -24,7 +24,7 @@
   >
   {%- endfor %}
   {% if site.manifest -%}
-  <link rel="manifest" href="{{ site.url | append: site.baseurl }}/manifest.json">
+  <link rel="manifest" href="{{ site.url | append: site.baseurl }}/{{ site.manifest }}">
   {%- endif %}
 
   <link rel="stylesheet" href="{{ site.url | append: site.baseurl }}/assets/css/style.css">
