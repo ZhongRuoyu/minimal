@@ -10,7 +10,7 @@
     {%- endunless -%}
   </title>
 
-  <script data-cfasync="false" src="{{ site.url | append: site.baseurl }}/assets/js/color-modes.js"></script>
+  <script data-cfasync="false" src="{{ "/assets/js/color-modes.js" | relative_url }}"></script>
 
   {% for favicon in site.favicon %}
   <link rel="{{ favicon.rel | default: "icon" }}"
@@ -20,14 +20,14 @@
     {% if favicon.sizes -%}
     sizes="{{ favicon.sizes }}"
     {%- endif %}
-    href="{{ site.url | append: site.baseurl }}{{ favicon.href }}"
+    href="{{ favicon.href | relative_url }}"
   >
   {%- endfor %}
   {% if site.manifest -%}
-  <link rel="manifest" href="{{ site.url | append: site.baseurl }}/{{ site.manifest }}">
+  <link rel="manifest" href="{{ site.manifest | relative_url }}">
   {%- endif %}
 
-  <link rel="stylesheet" href="{{ site.url | append: site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
     integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />

@@ -9,7 +9,7 @@ layout: page
   {% if post.categories contains page.category -%}
   {% unless post.categories contains "archive" and page.category != "archive" -%}
   <article class="my-5">
-    <a href="{{ site.url | append: site.baseurl }}{{- post.url -}}" class="text-reset text-decoration-none">
+    <a href="{{ post.url | relative_url }}" class="text-reset text-decoration-none">
       <h2 class="no-anchor">{{ post.title }}</h2>
       {% if post.date -%}
       <div class="text-muted my-2">
