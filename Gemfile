@@ -8,5 +8,4 @@ group :development do
   gem "html-proofer"
   gem "rubocop"
   gem "sorbet"
-  gem "webrick"
 end
