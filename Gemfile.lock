@@ -15,7 +15,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     afm (0.2.2)
     ast (2.4.2)
-    async (2.15.2)
+    async (2.15.3)
       console (~> 1.26)
       fiber-annotation
       io-event (~> 1.6, >= 1.6.5)
@@ -34,11 +34,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.17.0-aarch64-linux-gnu)
     ffi (1.17.0-aarch64-linux-musl)
-    ffi (1.17.0-arm-linux-gnu)
-    ffi (1.17.0-arm-linux-musl)
     ffi (1.17.0-arm64-darwin)
-    ffi (1.17.0-x86-linux-gnu)
-    ffi (1.17.0-x86-linux-musl)
     ffi (1.17.0-x86_64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
     ffi (1.17.0-x86_64-linux-musl)
@@ -47,16 +43,10 @@ GEM
       fiber-storage
     fiber-storage (0.1.2)
     forwardable-extended (2.6.0)
-    google-protobuf (4.27.3)
-      bigdecimal
-      rake (>= 13)
     google-protobuf (4.27.3-aarch64-linux)
       bigdecimal
       rake (>= 13)
     google-protobuf (4.27.3-arm64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.27.3-x86-linux)
       bigdecimal
       rake (>= 13)
     google-protobuf (4.27.3-x86_64-darwin)
@@ -118,11 +108,7 @@ GEM
     mercenary (0.4.0)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.16.7-arm-linux)
-      racc (~> 1.4)
     nokogiri (1.16.7-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.16.7-x86-linux)
       racc (~> 1.4)
     nokogiri (1.16.7-x86_64-darwin)
       racc (~> 1.4)
@@ -171,15 +157,7 @@ GEM
       google-protobuf (~> 4.26)
     sass-embedded (1.77.8-aarch64-linux-musl)
       google-protobuf (~> 4.26)
-    sass-embedded (1.77.8-arm-linux-gnueabihf)
-      google-protobuf (~> 4.26)
-    sass-embedded (1.77.8-arm-linux-musleabihf)
-      google-protobuf (~> 4.26)
     sass-embedded (1.77.8-arm64-darwin)
-      google-protobuf (~> 4.26)
-    sass-embedded (1.77.8-x86-linux-gnu)
-      google-protobuf (~> 4.26)
-    sass-embedded (1.77.8-x86-linux-musl)
       google-protobuf (~> 4.26)
     sass-embedded (1.77.8-x86_64-darwin)
       google-protobuf (~> 4.26)
@@ -208,15 +186,8 @@ PLATFORMS
   aarch64-linux
   aarch64-linux-gnu
   aarch64-linux-musl
-  arm-linux
-  arm-linux-gnu
-  arm-linux-gnueabihf
-  arm-linux-musl
-  arm-linux-musleabihf
   arm64-darwin
-  x86-linux
-  x86-linux-gnu
-  x86-linux-musl
+  universal-darwin
   x86_64-darwin
   x86_64-linux
   x86_64-linux-gnu
