@@ -3,7 +3,13 @@
     <span class="text-nowrap">
       {{- "Copyright &copy; " -}}
       {%- if site.copyright.years -%}
+      {%- if site.copyright.years.begin and site.copyright.years.end -%}
+      {{- site.copyright.years.begin -}}
+      {{- " &ndash; " -}}
+      {{- site.copyright.years.end -}}
+      {%- else -%}
       {{- site.copyright.years -}}
+      {%- endif -%}
       {%- endif -%}
       {{- " " -}}
       {{- site.copyright.owner | default: site.title -}}
