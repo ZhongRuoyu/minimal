@@ -1,20 +1,18 @@
 .flex-header {
-  min-height: 8vh !important;
-  min-height: 8dvh !important;
+  min-height: 4rem !important;
   padding-top: 0.5rem !important;
   padding-bottom: 0 !important;
 }
 
 .flex-body {
-  min-height: 80vh !important;
-  min-height: 80dvh !important;
+  min-height: calc(100vh - 4rem - 7rem) !important;
+  min-height: calc(100dvh - 4rem - 7rem) !important;
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
 
 .flex-footer {
-  min-height: 12vh !important;
-  min-height: 12dvh !important;
+  min-height: 7rem !important;
   padding-top: 0 !important;
   padding-bottom: 0.5rem !important;
 }
