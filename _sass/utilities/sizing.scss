@@ -1,11 +1,23 @@
+.flex-full {
+  height: 100vh !important;
+  height: -webkit-fill-available !important;
+  height: 100dvh !important;
+}
+
 .flex-header {
-  min-height: 8vh !important;
+  min-height: 8% !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .flex-body {
-  min-height: 80vh !important;
+  min-height: 80% !important;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .flex-footer {
-  min-height: 12vh !important;
+  min-height: 12% !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
