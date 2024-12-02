@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     minimal (0)
-      jekyll
+      jekyll (~> 4.3)
       jekyll-redirect-from
       jekyll-seo-tag
       jekyll-sitemap
@@ -197,4 +197,4 @@ DEPENDENCIES
   sorbet
 
 BUNDLED WITH
-   2.5.11
+   2.5.22

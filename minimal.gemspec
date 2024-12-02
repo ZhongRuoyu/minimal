@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
     "rubygems_mfa_required" => "true"
   }
 
-  spec.add_dependency "jekyll"
+  spec.add_dependency "jekyll", "~> 4.3"
   spec.add_dependency "jekyll-redirect-from"
   spec.add_dependency "jekyll-seo-tag"
   spec.add_dependency "jekyll-sitemap"
