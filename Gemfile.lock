@@ -15,7 +15,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     afm (0.2.2)
     ast (2.4.2)
-    async (2.21.3)
+    async (2.22.0)
       console (~> 1.29)
       fiber-annotation
       io-event (~> 1.7)
