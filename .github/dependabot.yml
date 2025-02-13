@@ -14,3 +14,7 @@ updates:
       interval: weekly
     allow:
       - dependency-type: all
+    groups:
+      sorbet:
+        patterns:
+          - "sorbet*"
