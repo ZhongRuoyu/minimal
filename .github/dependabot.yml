@@ -1,20 +1,16 @@
 version: 2
 
+multi-ecosystem-groups:
+  all:
+    schedule:
+      interval: weekly
+
 updates:
   - package-ecosystem: github-actions
     directory: /
-    schedule:
-      interval: weekly
-    allow:
-      - dependency-type: all
-
+    patterns: ["*"]
+    multi-ecosystem-group: all
   - package-ecosystem: bundler
     directory: /
-    schedule:
-      interval: weekly
-    allow:
-      - dependency-type: all
-    groups:
-      sorbet:
-        patterns:
-          - "sorbet*"
+    patterns: ["*"]
+    multi-ecosystem-group: all
