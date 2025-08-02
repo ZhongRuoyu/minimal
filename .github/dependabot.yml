@@ -4,6 +4,7 @@ multi-ecosystem-groups:
   all:
     schedule:
       interval: weekly
+      day: sunday
 
 updates:
   - package-ecosystem: github-actions
