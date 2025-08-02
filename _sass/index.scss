@@ -1,3 +1,3 @@
-@import "content/index.scss";
-@import "layouts/index.scss";
-@import "utilities/index.scss";
+@use "content/index.scss" as content;
+@use "layouts/index.scss" as layouts;
+@use "utilities/index.scss" as utilities;
