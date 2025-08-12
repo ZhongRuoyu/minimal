@@ -12,9 +12,9 @@ copyright:
     end: 2025
   owner: Ruoyu Zhong
 
-lang: en
-locale: en_GB
-date_format: "%e %B %Y"
+lang: en-US
+locale: en_US
+date_format: "%B %-d, %Y"
 
 # logo: /assets/images/logo.png
 # favicon:
