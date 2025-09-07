@@ -1,17 +1,22 @@
 version: 2
 
-multi-ecosystem-groups:
-  all:
-    schedule:
-      interval: weekly
-      day: sunday
-
 updates:
   - package-ecosystem: github-actions
     directory: /
-    patterns: ["*"]
-    multi-ecosystem-group: all
+    schedule:
+      interval: weekly
+      day: sunday
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+
   - package-ecosystem: bundler
     directory: /
-    patterns: ["*"]
-    multi-ecosystem-group: all
+    schedule:
+      interval: weekly
+      day: sunday
+    groups:
+      bundler:
+        patterns:
+          - "*"
