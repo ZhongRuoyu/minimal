@@ -3,6 +3,9 @@
 Minimal is a simple, extensible [Bootstrap](https://getbootstrap.com/)-based
 minimalist [Jekyll](https://jekyllrb.com/) blog theme.
 
+See also its successor, a same-named theme for [Hugo](https://gohugo.io/), at
+[ZhongRuoyu/hugo-minimal](https://github.com/ZhongRuoyu/hugo-minimal).
+
 ## Usage
 
 To use this theme, you can fork this repository and replace the configs and
