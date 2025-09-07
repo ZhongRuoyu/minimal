@@ -12,13 +12,13 @@ description: Berkeley sockets is an application programming interface (API) for 
 
 The Berkeley socket interface is defined in several header files. The names and content of these files differ slightly between implementations. In general, they include:
 
-| File         | Description                                                                                                                                                              |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| sys/socket.h | Core socket functions and data structures.                                                                                                                               |
-| netinet/in.h | AF_INET and AF_INET6 address families and their corresponding protocol families, PF_INET and PF_INET6. These include standard IP addresses and TCP and UDP port numbers. |
-| sys/un.h     | PF_UNIX and PF_LOCAL address family. Used for local communication between programs running on the same computer.                                                         |
-| arpa/inet.h  | Functions for manipulating numeric IP addresses.                                                                                                                         |
-| netdb.h      | Functions for translating protocol names and host names into numeric addresses. Searches local data as well as name services.                                            |
+| File           | Description                                                                                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `sys/socket.h` | Core socket functions and data structures.                                                                                                                               |
+| `netinet/in.h` | AF_INET and AF_INET6 address families and their corresponding protocol families, PF_INET and PF_INET6. These include standard IP addresses and TCP and UDP port numbers. |
+| `sys/un.h`     | PF_UNIX and PF_LOCAL address family. Used for local communication between programs running on the same computer.                                                         |
+| `arpa/inet.h`  | Functions for manipulating numeric IP addresses.                                                                                                                         |
+| `netdb.h`      | Functions for translating protocol names and host names into numeric addresses. Searches local data as well as name services.                                            |
 
 ## Client-server example using TCP
 
