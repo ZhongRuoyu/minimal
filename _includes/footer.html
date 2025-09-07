@@ -1,8 +1,8 @@
-<div class="container flex-footer text-center text-muted fw-light">
+<div class="container flex-footer text-muted fw-light">
   <hr>
   <footer>
-    <p>
-      <span class="text-nowrap">
+    <div class="d-flex flex-wrap justify-content-center gap-1">
+      <span>
         {{- "Copyright &copy; " -}}
         {%- if site.copyright.years -%}
         {%- if site.copyright.years.begin and site.copyright.years.end -%}
@@ -18,10 +18,10 @@
         {{- "." -}}
       </span>
       {% if site.copyright.message -%}
-      <span class="text-nowrap">
+      <span>
         {{- site.copyright.message -}}
       </span>
       {%- endif %}
-    </p>
+    </div>
   </footer>
 </div>
