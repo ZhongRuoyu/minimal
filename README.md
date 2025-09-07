@@ -1,9 +1,7 @@
 # Minimal
 
 Minimal is a simple, extensible [Bootstrap](https://getbootstrap.com/)-based
-minimalist [Jekyll](https://jekyllrb.com/) blog theme, developed by
-[Ruoyu Zhong](https://www.ruoyu.xyz). It is a refactorization of Ruoyu's
-previous site, developed in 2020.
+minimalist [Jekyll](https://jekyllrb.com/) blog theme.
 
 ## Usage
 
@@ -13,7 +11,7 @@ contents with your own.
 Additionally, you can declare this theme as a gem in your `Gemfile`:
 
 ```ruby
-gem "minimal", git: "https://github.com/ZhongRuoyu/minimal.git"
+gem "minimal", git: "https://github.com/ZhongRuoyu/jekyll-minimal.git"
 ```
 
 Then, add the following to your `_config.yml`:
@@ -23,11 +21,11 @@ theme: minimal
 ```
 
 If you use the gem-based approach, make sure to override the configs found in
-[`_config.yml`](https://github.com/ZhongRuoyu/minimal/blob/HEAD/_config.yml).
+[`_config.yml`](https://github.com/ZhongRuoyu/jekyll-minimal/blob/HEAD/_config.yml).
 
 ## Live Demo
 
-A live demo is available [here](https://minimal.ruoyu.io).
+A live demo is available [here](https://jekyll-minimal.ruoyu.io).
 
 ## License
 

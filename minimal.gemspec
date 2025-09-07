@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors  = ["Ruoyu Zhong"]
   spec.email    = ["zhongruoyu@outlook.com"]
   spec.summary  = "A minimalist Jekyll blog theme."
-  spec.homepage = "https://github.com/ZhongRuoyu/minimal"
+  spec.homepage = "https://github.com/ZhongRuoyu/jekyll-minimal"
   spec.license  = "MIT"
   spec.metadata = {
     "rubygems_mfa_required" => "true"
