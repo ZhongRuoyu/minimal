@@ -3,9 +3,7 @@ layout: default
 ---
 
 <div class="container d-flex flex-column">
-  <div class="container d-flex flex-header">
-    {% include navigation.html %}
-  </div>
+  {% include navigation.html %}
   <div class="container container-body d-flex flex-column flex-body
     {%- if page.center -%}
     {{- " " -}}
@@ -19,8 +17,5 @@ layout: default
       </article>
     </main>
   </div>
-  <div class="container flex-footer text-center text-muted fw-light">
-    <hr>
-    {% include footer.html %}
-  </div>
+  {% include footer.html %}
 </div>
