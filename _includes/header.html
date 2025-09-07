@@ -1,24 +1,50 @@
-<header class="my-3">
-  {% unless page.hide_title -%}
-  {% if page.title -%}
-  <h1>{{ page.title }}</h1>
+{% assign display_components = 0 %}
+{% unless page.hide_title %}
+{% if page.title %}
+{% assign title = page.title %}
+{% assign display_components = display_components | plus: 1 %}
+{% endif %}
+{% if page.subtitle %}
+{% assign subtitle = page.subtitle %}
+{% assign display_components = display_components | plus: 1 %}
+{% endif %}
+{% endunless %}
+{% assign show_title_or_subtitle = title or subtitle %}
+{% unless page.hide_author %}
+{% if page.author %}
+{% assign author = page.author %}
+{% assign display_components = display_components | plus: 1 %}
+{% endif %}
+{% endunless %}
+{% unless page.hide_date %}
+{% if page.date %}
+{% assign date = page.date %}
+{% assign display_components = display_components | plus: 1 %}
+{% endif %}
+{% endunless %}
+
+{% assign header_class = "my-3" %}
+{% if display_components > 1 %}
+{% assign header_class = "my-5" %}
+{% endif %}
+
+<header class="{{ header_class }}">
+  {% if show_title_or_subtitle -%}
+  {%- if title -%}
+  <h1>{{ title }}</h1>
   {%- endif %}
-  {% if page.subtitle -%}
-  <div class="fs-3 my-2">{{ page.subtitle }}</div>
+  {% if subtitle -%}
+  <div class="fs-3 my-2">{{ subtitle }}</div>
+  {%- endif -%}
   {%- endif %}
-  {%- endunless %}
-  {% unless page.hide_author -%}
-  {% if page.author -%}
-  <div class="text-muted my-2">{{ page.author }}</div>
+  {% if author -%}
+  <div class="text-muted my-2">{{ author }}</div>
   {%- endif %}
-  {%- endunless %}
-  {% unless page.hide_date -%}
-  {% if page.date -%}
+  {% if date -%}
   <div class="text-muted my-2">
-    <time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S.%3N" }}">
-      {{- page.date | date: site.date_format | default: "%a, %e %b %Y %H:%M:%S %Z" -}}
+    <time datetime="{{ date | date: "%Y-%m-%dT%H:%M:%S.%3N" }}">
+      {{- date | date: site.date_format | default: "%a, %e %b %Y %H:%M:%S %Z" -}}
     </time>
   </div>
   {%- endif %}
-  {%- endunless %}
 </header>
