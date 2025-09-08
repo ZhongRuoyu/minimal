@@ -2,8 +2,8 @@
   <nav class="navbar navbar-expand d-print-none">
     <ul class="nav">
       {% for item in site.navigation_items -%}
-      <li class="nav-item me-2">
-        <a class="nav-link text-nowrap px-2 py-0" href="
+      <li class="nav-item ms-0 me-4 mt-0 mb-3">
+        <a class="nav-link text-nowrap px-0 py-0" href="
         {%- if item.url -%}
         {{- item.url -}}
         {%- else -%}
