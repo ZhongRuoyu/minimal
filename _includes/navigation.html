@@ -1,16 +1,11 @@
 <div class="container d-flex flex-header">
   <nav class="navbar navbar-expand d-print-none">
     <ul class="nav">
-      <li class="nav-item me-2">
-        <a class="nav-link text-nowrap ps-0 pe-2 py-0" href="{{ "/" | relative_url }}">
-          {{- "Home" -}}
-        </a>
-      </li>
       {% for item in site.navigation_items -%}
       <li class="nav-item me-2">
         <a class="nav-link text-nowrap px-2 py-0" href="
-        {%- if item.absolute_path -%}
-        {{- item.path -}}
+        {%- if item.url -%}
+        {{- item.url -}}
         {%- else -%}
         {{- item.path | relative_url -}}
         {%- endif -%}

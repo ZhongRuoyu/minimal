@@ -36,6 +36,8 @@ seo: true
 # google_analytics: G-##########
 
 navigation_items:
+  - name: Home
+    path: /
   - name: Blog
     path: /blog/
   - name: Projects
