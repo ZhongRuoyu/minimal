@@ -6,9 +6,4 @@
 
 .container-body {
   max-width: 768px !important;
-  margin: auto;
-
-  @media print {
-    max-width: 100% !important;
-  }
 }
