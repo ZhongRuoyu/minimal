@@ -1,18 +1,22 @@
+.flex-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 .flex-header {
-  min-height: 4rem !important;
-  padding-top: 0.5rem !important;
-  padding-bottom: 0 !important;
+  flex: none;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .flex-body {
-  min-height: calc(100vh - 4rem - 7rem) !important;
-  min-height: calc(100dvh - 4rem - 7rem) !important;
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  flex: 1;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 .flex-footer {
-  min-height: 7rem !important;
-  padding-top: 0 !important;
-  padding-bottom: 0.5rem !important;
+  flex: none;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
