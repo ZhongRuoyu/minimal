@@ -23,9 +23,9 @@
 {% endif %}
 {% endunless %}
 
-{% assign header_class = "my-3" %}
-{% if display_components > 1 %}
 {% assign header_class = "my-5" %}
+{% if display_components == 1 %}
+{% assign header_class = "mt-5 mb-3" %}
 {% endif %}
 
 <header class="{{ header_class }}">
